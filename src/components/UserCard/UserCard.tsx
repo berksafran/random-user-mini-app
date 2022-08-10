@@ -9,6 +9,7 @@ const UserCard = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
+    // it provides to fetch a new random user, when user click the "show" button.
     if (state.visibility) {
       fetchUser();
     }
